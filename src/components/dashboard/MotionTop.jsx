@@ -17,7 +17,7 @@ import Image from 'next/image'
 
 const MotionTop = () => {
   return (
-    <div>
+    <div className='h-full flex flex-col'>
       {/* <div className='flex gap-10 w-full'>
         <div className='bg-[#1B1C1E] w-full rounded-[1.6rem] shadow-[16.21px_16.21px_56.21px_0px_#0000004F] p-8 relative'>
           <div className='absolute right-3 top-3 rounded-full bg-primary p-1.5 w-7 h-7'>
@@ -196,96 +196,169 @@ const MotionTop = () => {
           </div>
       </div>
       
-
-      <div className='bg-[#1B1C1E] '>
-        <div className='bg-primary px-6 py-3 rounded-t-[1.3rem] relative mt-10'>
-          <div className='absolute -top-6 left-0 w-full justify-center flex '>
-            <div className='bg-[#111111] rounded-full p-1.5'>
-              <div className='bg-white rounded-full p-3.5 w-12 h-12'>
-                <Image src={arrowdown} className='rotate-180' alt=''/>
+      <div className='mt-10 h-full'>
+        <div className='bg-[#1B1C1E] pb-8 flex-1 flex flex-col justify-between rounded-[1.3rem] h-full '>
+          <div className='bg-primary px-6 py-3 rounded-t-[1.3rem] relative '>
+            <div className='absolute -top-6 left-0 w-full justify-center flex '>
+              <div className='bg-[#111111] rounded-full p-1.5'>
+                <div className='bg-white rounded-full p-3.5 w-12 h-12'>
+                  <Image src={arrowdown} className='rotate-180' alt=''/>
+                </div>
               </div>
             </div>
-          </div>
-          <p className='text-[#1B1C1E] font-extrabold font-mont text-2xl'>Event Log</p>
+            <p className='text-[#1B1C1E] font-extrabold font-mont text-2xl'>Event Log</p>
 
-        </div>
-        <div className='mt-8 flex gap-10 items-center px-7 justify-between'>
-          
-          <div className='bg-white flex flex-1/2 items-start flex-col p-4 rounded-[1.2rem]'>
-            <div className='bg-[#1B1C1E] py-0.5 px-4 rounded-full'>
-              <p className='text-primary font-bebas text-xs pt-0.5'> total rewards distributed</p>
-            </div>
-            <div className='flex mt-4 justify-between items-center w-full'>
-              <div className='flex items-center'>
-                <div className='w-9'>
-                  <Image src={ethblack} alt='' />
+          </div>
+          <div className='flex gap-10 items-center px-7 justify-between'>
+            
+            <div className='bg-white flex flex-1/2 items-start flex-col p-4 rounded-[1.2rem]'>
+              <div className='bg-[#1B1C1E] py-0.5 px-4 rounded-full'>
+                <p className='text-primary font-bebas text-xs pt-0.5'> total rewards distributed</p>
+              </div>
+              <div className='flex mt-4 justify-between items-center w-full'>
+                <div className='flex items-center'>
+                  <div className='w-9'>
+                    <Image src={ethblack} alt='' />
+                  </div>
+                  <p className='font-mont font-extrabold text-[1rem] text-[#000000]'>
+                    00.00
+                  </p>
                 </div>
-                <p className='font-mont font-extrabold text-[1rem] text-[#000000]'>
-                  00.00
+
+                <p className='font-bebas text-sm text-[#000000A6]'>
+                ~ 12,345,678 USD
                 </p>
               </div>
-
-              <p className='font-bebas text-sm text-[#000000A6]'>
-              ~ 12,345,678 USD
-              </p>
-            </div>
-          </div>
-
-          <div className='flex gap-2.5 items-center'>
-            <div className='space-y-2'>
-              <div className='bg-primary py-1.5 w-[4.5rem] text-center rounded-tl-xl'>
-                <p className=' text-[#262626] pt-0.5 font-bebas text-sm'>date</p>
-              </div>
-              <div className='bg-primary py-1.5 w-[4.5rem] text-center rounded-bl-xl'>
-                <p className=' text-[#262626] pt-0.5 font-bebas text-sm'>time (utc)</p>
-              </div>
             </div>
 
-            <div className='flex gap-2 relative'>
-              
-              <div className='bg-[#1B1C1E] rounded-full p-[0.2rem] w-7 h-7  absolute -left-4 top-6'>
-                <div className='bg-white p-1 rounded-full'>
-                  <Image src={poly} alt='' />
+            <div className='flex gap-2.5 items-center'>
+              <div className='space-y-2'>
+                <div className='bg-primary py-1.5 w-[4.5rem] text-center rounded-tl-xl'>
+                  <p className=' text-[#262626] pt-0.5 font-bebas text-sm'>date</p>
+                </div>
+                <div className='bg-primary py-1.5 w-[4.5rem] text-center rounded-bl-xl'>
+                  <p className=' text-[#262626] pt-0.5 font-bebas text-sm'>time (utc)</p>
                 </div>
               </div>
 
-              <div className='bg-[#1B1C1E] rounded-full p-[0.2rem] w-7 h-7  absolute -right-4 top-6'>
-                <div className='bg-white p-1 rounded-full rotate-180'>
-                  <Image src={poly} alt='' />
+              <div className='flex gap-2 relative'>
+                
+                <div className='bg-[#1B1C1E] rounded-full p-[0.2rem] w-7 h-7  absolute -left-4 top-6'>
+                  <div className='bg-white p-1 rounded-full'>
+                    <Image src={poly} alt='' />
+                  </div>
                 </div>
-              </div>
 
-              <div className='bg-[#111111] shadow-[4px_4px_16px_0px_#00000059] w-[4.5rem] rounded-xl space-y-5 text-center py-3'>
-                <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14th feb</p>
-                <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14 : 32</p>
-              </div>
-              <div className='bg-[#111111] shadow-[4px_4px_16px_0px_#00000059] w-[4.5rem] rounded-xl space-y-5 text-center py-3'>
-                <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14th feb</p>
-                <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14 : 32</p>
-              </div>
-              <div className='bg-[#111111] shadow-[4px_4px_16px_0px_#00000059] w-[4.5rem] rounded-xl space-y-5 text-center py-3'>
-                <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14th feb</p>
-                <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14 : 32</p>
-              </div>
-              <div className='bg-[#111111] shadow-[4px_4px_16px_0px_#00000059] w-[4.5rem] rounded-xl space-y-5 text-center py-3'>
-                <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14th feb</p>
-                <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14 : 32</p>
-              </div>
-              <div className='bg-[#111111] shadow-[4px_4px_16px_0px_#00000059] w-[4.5rem] rounded-xl space-y-5 text-center py-3'>
-                <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14th feb</p>
-                <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14 : 32</p>
-              </div>
-              <div className='bg-[#111111] shadow-[4px_4px_16px_0px_#00000059] w-[4.5rem] rounded-xl space-y-5 text-center py-3'>
-                <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14th feb</p>
-                <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14 : 32</p>
+                <div className='bg-[#1B1C1E] rounded-full p-[0.2rem] w-7 h-7  absolute -right-4 top-6'>
+                  <div className='bg-white p-1 rounded-full rotate-180'>
+                    <Image src={poly} alt='' />
+                  </div>
+                </div>
+
+                <div className='bg-[#111111] shadow-[4px_4px_16px_0px_#00000059] w-[4.5rem] rounded-xl space-y-5 text-center py-3'>
+                  <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14th feb</p>
+                  <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14 : 32</p>
+                </div>
+                <div className='bg-[#111111] shadow-[4px_4px_16px_0px_#00000059] w-[4.5rem] rounded-xl space-y-5 text-center py-3'>
+                  <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14th feb</p>
+                  <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14 : 32</p>
+                </div>
+                <div className='bg-[#111111] shadow-[4px_4px_16px_0px_#00000059] w-[4.5rem] rounded-xl space-y-5 text-center py-3'>
+                  <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14th feb</p>
+                  <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14 : 32</p>
+                </div>
+                <div className='bg-[#111111] shadow-[4px_4px_16px_0px_#00000059] w-[4.5rem] rounded-xl space-y-5 text-center py-3'>
+                  <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14th feb</p>
+                  <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14 : 32</p>
+                </div>
+                <div className='bg-[#111111] shadow-[4px_4px_16px_0px_#00000059] w-[4.5rem] rounded-xl space-y-5 text-center py-3'>
+                  <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14th feb</p>
+                  <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14 : 32</p>
+                </div>
+                <div className='bg-[#111111] shadow-[4px_4px_16px_0px_#00000059] w-[4.5rem] rounded-xl space-y-5 text-center py-3'>
+                  <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14th feb</p>
+                  <p className='text-white font-bebas text-[0.63rem] pt-0.5'>14 : 32</p>
+                </div>
+
               </div>
 
             </div>
 
           </div>
 
+          <div className='px-7 flex gap-6 w-full '>
+            
+            <div className='bg-[#111111] w-full rounded-[1.13rem] px-6 pb-6 pt-10 relative'>
+
+              <div className='bg-primary px-5 py-0.5 rounded-full absolute -top-4'>
+                <p className='text-[#17181A] pt-0.5 font-bebas text-[0.95rem]'>top buyers</p>
+              </div>
+
+              <div className='grid grid-cols-2 gap-6'>
+                  {
+                    Array.from({ length: 8 }).map((_, i) => (
+                      <div key={i} className='bg-[#25262A] shadow-[6px_6px_15px_0px_#00000059] rounded-[0.6rem] p-2 flex items-center relative'>
+                        
+                        <p className='font-mont text-sm font-extrabold border-4 border-[#111111] bg-white w-9 h-9 flex items-center justify-center rounded-full text-[#111111] absolute -top-4 -left-4'>
+                          {i}
+                        </p>
+                        
+                        <p className='font-mont text-[0.8rem] text-white font-extrabold text-center w-full'>0x12...f35h</p>
+                        
+                        <div className='space-y-2 shrink-0'>
+                          <div className='bg-white rounded-full py-0.5 px-3'>   
+                            <p className='text-[#111111] font-bebas pt-0.5 text-[0.65rem]'>eth spent : 00.0000</p>
+                          </div>
+                          <div className='bg-primary rounded-full py-0.5 px-3'>   
+                            <p className='text-[#111111] font-bebas pt-0.5 text-[0.65rem]'>rewards : $ 12,345</p>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    ))
+                  }
+
+              </div>
+            
+            </div>
+
+            <div className='h-full bg-[#111111] rounded-[1.3rem] relative flex-2/3'>
+              <div className='bg-primary px-5 py-0.5 rounded-full absolute -top-4 left-5'>
+                <p className='text-[#17181A] pt-0.5 font-bebas text-[0.95rem]'>reward breakdown</p>
+              </div>
+              <div className='flex flex-col items-center justify-center w-full h-full'>
+                <div className='bg-white w-32 h-32 rounded-full flex justify-center items-center'>
+                  <p className='text-[#1B1C1E] text-sm font-mont font-extrabold'>$ 1,234,567</p>
+                </div>
+                <div className='mt-10 gap-2.5 flex items-center'>
+                  <div className='bg-[#1B1C1E] px-5 pt-3 pb-2 gap-3 rounded-full flex justify-between items-center relative'>
+                    <div className='bg-[#C8F051] rounded-full text-xs px-3 py-0.5 font-bebas text-[#111111] absolute -top-3'>
+                      <p>buyer’s pool</p>
+                    </div>
+                    <p className='font-mont font-[700] text-xs'>$ 1,234,567</p>
+                    <div className='bg-[#C8F051] rounded-full w-6 h-6'></div>
+                  </div>
+                  <div className='bg-[#1B1C1E] px-5 pt-3 pb-2 gap-3 rounded-full flex justify-between items-center relative'>
+                    <div className='bg-[#08FF15] rounded-full text-xs px-3 py-0.5 font-bebas text-[#111111] absolute -top-3'>
+                      <p>buyer’s pool</p>
+                    </div>
+                    <p className='font-mont font-[700] text-xs'>$ 1,234,567</p>
+                    <div className='bg-[#08FF15] rounded-full w-6 h-6'></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
         </div>
+
+       
+
       </div>
+      
+
+
                             
     </div>
   )
