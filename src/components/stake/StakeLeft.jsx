@@ -5,7 +5,6 @@ import ethblack from "@/assets/ethblack.png";
 const StakeLeft = () => {
   return (
     <div className="bg-[#1B1C1E] rounded-[1.5rem] flex flex-col items-center px-8 h-full w-full">
-
       <div className="bg-primary p-6 rounded-[1.5rem] relative w-[70%]">
         <div className="absolute -top-4 left-0 flex justify-center w-full">
           <div className="bg-[#121215] py-1 px-4 rounded-full">
@@ -24,14 +23,12 @@ const StakeLeft = () => {
               00.00
             </p>
           </div>
-          <p className="text-[#121215] text-2xl font-bebas">
-            ~ 12,345,678 USD
-          </p>
+          <p className="text-[#121215] text-2xl font-bebas">~ 12,345,678 USD</p>
         </div>
       </div>
 
       <div className="w-full mt-5 h-full mb-8 flex gap-6">
-        <div className="bg-[#121215] w-full  h-full space-y-6 rounded-[1.5rem] flex flex-col">
+        <div className="bg-[#121215] w-full  h-full space-y-6 rounded-[1.5rem]">
           <div className="flex justify-between">
             <div className="bg-white w-[6rem] py-0.5 text-center rounded-full">
               <p className="font-bebas text-sm text-[#1B1C1E] pt-0.5">
@@ -39,19 +36,15 @@ const StakeLeft = () => {
               </p>
             </div>
             <div className="bg-primary w-[6rem] py-0.5 text-center rounded-full">
-              <p className="font-bebas text-sm text-[#1B1C1E] pt-0.5">
-                active
-              </p>
+              <p className="font-bebas text-sm text-[#1B1C1E] pt-0.5">active</p>
             </div>
           </div>
 
-          <div className="px-7 space-y-6">
-            <div className="bg-[#1B1C1E] border-2 border-primary rounded-3xl h-full w-full" />
+          <div className="px-7 space-y-6 h-full flex flex-col">
+            <div className="bg-[#1B1C1E]  border-2 border-primary rounded-3xl h-1/2 w-full" />
 
             <div className="flex gap-6">
-              {/* Left column */}
               <div className="space-y-5 w-full">
-                {/* Market Cap */}
                 <div className="bg-white rounded-[1rem] flex flex-col gap-2 items-start p-3">
                   <div className="bg-[#1B1C1E] w-20 text-center py-0.5 rounded-full">
                     <p className="font-bebas text-[0.65rem] text-primary">
@@ -63,7 +56,6 @@ const StakeLeft = () => {
                   </p>
                 </div>
 
-                {/* Pending Payout */}
                 <div className="bg-white rounded-[1rem] flex flex-col gap-2 items-start p-3">
                   <div className="bg-[#1B1C1E] w-20 text-center py-0.5 rounded-full">
                     <p className="font-bebas text-[0.65rem] text-primary">
@@ -112,7 +104,6 @@ const StakeLeft = () => {
               </div>
             </div>
           </div>
-          
         </div>
         <div className="bg-[#121215] w-full  h-full space-y-6 rounded-[1.5rem] flex flex-col">
           <div className="flex justify-between">
@@ -122,9 +113,7 @@ const StakeLeft = () => {
               </p>
             </div>
             <div className="bg-primary w-[6rem] py-0.5 text-center rounded-full">
-              <p className="font-bebas text-sm text-[#1B1C1E] pt-0.5">
-                active
-              </p>
+              <p className="font-bebas text-sm text-[#1B1C1E] pt-0.5">active</p>
             </div>
           </div>
 
@@ -195,7 +184,6 @@ const StakeLeft = () => {
               </div>
             </div>
           </div>
-          
         </div>
       </div>
 
@@ -204,7 +192,6 @@ const StakeLeft = () => {
           Selling or transferring your tokens will cancel your reward stream.
         </p>
       </div>
-     
     </div>
   );
 };
